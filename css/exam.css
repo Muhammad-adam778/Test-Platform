@@ -1,0 +1,141 @@
+/* Global Properties */
+*{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Kufam', sans-serif;
+    direction: rtl;
+    margin: 0;
+}
+ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+}
+p{
+    margin: 0;
+}
+/* Variables */
+:root{
+    --main-bck-color: #2794d4;
+    --main-font-color: white;
+}
+/* Header Section*/
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--main-bck-color);
+    color: var(--main-font-color);
+    padding: 20px 30px;
+}
+a.logo{
+    display: block;
+    height: 50px;
+    font-size: 30px;
+    line-height: 50px;
+    color: var(--main-font-color);
+}
+.nav .menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 50px;
+}
+.nav .menu a{
+    color: var(--main-font-color);
+}
+
+/* Content Section */
+.content{
+    background-color: #eee;
+    padding: 20px 0;
+}
+.content h1{
+    width: fit-content;
+    margin: 0 auto 30px;
+    padding: 10px 20px;
+    background-color: #333;
+    color: var(--main-font-color);
+}
+.content .container{
+    margin: 20px auto;
+    background-color: white;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 30px;
+    border: 4px solid #ddd;
+    border-radius: 6px;
+}
+@media (max-width: 767px){
+    .container{
+        width: 450px;
+    }
+}
+/* Small */
+@media (min-width: 768px){
+    .container{
+        width: 750px;
+    }
+}
+/* Medium */
+@media (min-width: 992px){
+    .container{
+        width: 970px;
+    }
+}
+/* Large */
+@media (min-width: 1200px){
+    .container{
+        width: 1170px;
+    }
+}
+.container .exam{
+    background-color: var(--main-bck-color);
+    text-align: center;
+    padding: 20px;
+    border-radius: 6px;
+}
+.container .exam h2{
+    color: var(--main-font-color);
+    margin: 0 0 20px;
+}
+.container .exam p{
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #333;
+}
+.container .exam a{
+    color: black;
+    background-color: #fff;
+    padding: 5px 10px;
+    border-radius: 6px;
+}
+
+/* Footer Section */
+.footer{
+    background-color: #333;
+    color: var(--main-font-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+}
+/* .content a{
+    font-size: 50px;
+    display: block;
+    width: fit-content;
+    margin: 150px auto 0;
+    text-decoration: none;
+    background-color: #2794d4;
+    color: white;
+    padding: 20px 30px;
+    border-radius: 6px;
+} */
